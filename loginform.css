@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #1148be;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #000;
+}
+
+.login-page {
+  background: linear-gradient(to right, #1148be, #12d8ee);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.login-form {
+  padding: 1.5rem 1rem;
+  background: linear-gradient(360deg, rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.2));
+  border-radius: 10px;
+  width: 400px;
+  gap: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  animation: fade-up 3s ease;
+}
+
+.login-avatar {
+  text-align: center;
+}
+
+.login-avatar .form-title {
+  padding-top: 0.3rem;
+}
+
+.form-title h2 {
+  font-size: 32px;
+}
+
+.login-avatar span {
+  font-size: 100px;
+}
+
+.login-form form {
+  position: relative;
+  display: flex;
+  flex-direction: inherit;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.3rem;
+  width: 70%;
+}
+
+form .input-div-3 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: inherit;
+  gap: 0.5rem;
+}
+
+.input-div-3 a,
+.input-div-3 p {
+  font-size: 14px;
+}
+
+form .input-div-3 input[type='submit'] {
+  font-size: 14px;
+  border-radius: 100px;
+  border: none;
+  outline: none;
+  padding: 0.8rem;
+  background: #000;
+  color: #fff;
+  margin-top: 0.8rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+
+form .input-div-3 input[type='submit']:hover {
+  transform: scale3d(1.01, 1.01, 1.01);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+form .input-div .material-symbols-rounded {
+  position: absolute;
+  opacity: 0.5;
+  top: 50%;
+  left: 0.7rem;
+  transform: translateY(-50%);
+  transition: 0.3s;
+}
+
+form .input-div input[type='email'],
+form .input-div input[type='password'] {
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 0.8rem 1rem 0.8rem 2.5rem;
+  border-radius: 100px;
+  width: 100%;
+  transition: 0.4s;
+}
+
+form input::placeholder {
+  opacity: 0.8;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+form input:focus::placeholder {
+  opacity: 0;
+}
+
+form input[type='email']:focus,
+form input[type='password']:focus {
+  background: #fff;
+}
+
+form .input-div {
+  position: relative;
+  width: 100%;
+}
+
+.login-form .other-options-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.other-options-div p {
+  font-size: 20px;
+}
+
+.other-options-div .other-options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.other-options-div .other-options a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.2rem;
+  margin: 0 0.2rem;
+  text-decoration: none;
+  background: #000;
+  height: 30px;
+  width: 30px;
+  border-radius: 100px;
+  transition: 0.3s, color 0.01s;
+}
+
+.other-options .fa-brands {
+  font-size: 18px;
+  color: #fff;
+}
+
+.other-options a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  background: #fff;
+}
+
+.other-options a:hover .fa-brands {
+  color: #000;
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(38%) rotate3d(1, 1, 1, 55deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) rotate3d(1, 1, 1, 0);
+  }
+}
